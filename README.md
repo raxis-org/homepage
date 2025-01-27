@@ -9,6 +9,9 @@ Raxisの静的ホームページサイトです。
 mkdir raxis
 cd ./raxis
 git clone https://github.com/raxis-org/homepage.git
+cd ./homepage/raxis-tech-homepage
+npm install
+npm start #サーバーが立ち上がる。Ctr + C でターミナルに復帰できる
 ```
 一度cloneした後(続き)
 ```bash
