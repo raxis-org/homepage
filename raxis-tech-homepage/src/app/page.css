@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-product-wrapper{
+    margin:0 1rem;
+    border-radius:1rem;
+    padding:1rem;
+    background-color: white;
+    box-shadow:0 0 10px #ccc;
+}
+.main-product-wrapper h2{
+    font-size:1.2rem;
+    padding:0.5em 0;
+    color:var(--theme-1);
+    font-weight:bold;
+}
+
+@keyframes rotateText {
+    0% { transform: rotateY(0deg) rotateX(0deg); transform-origin: 0% 50%; }
+    50% { transform: rotateY(180deg) rotateX(10deg); transform-origin: 50% 100%; }
+    100% { transform: rotateY(360deg) rotateX(0deg); transform-origin: 100% 50%; }
+}
+  
+.animated-text {
+    animation: rotateText 10s linear infinite;
+    transform-origin: 100% 50%;
+}
