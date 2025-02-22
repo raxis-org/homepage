@@ -1,6 +1,11 @@
 // フッターコンポーネント
 import Image from "next/image";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+
 export default function Footer() {
     return (
         <footer className="">
@@ -17,9 +22,15 @@ export default function Footer() {
                             />
                         </Link>
                         <div className="flex flex-nowrap justify-start gap-2 m-4" id="ft-sns-links">
-                            <Link target="_blank" href="https://x.com/raxis.org/" className="bg-gradient-to-tr from-[var(--theme-1)] to-[var(--theme-3)]"><i className="fa-brands fa-x-twitter"></i></Link>
-                            <Link target="_blank" href="https://www.instagram.com/raxis.tech/" className="bg-gradient-to-tr from-[var(--theme-1)] to-[var(--theme-3)]"><i className="fa-brands fa-instagram"></i></Link>
-                            <Link target="_blank" href="https://github.com/raxis-tech" className="bg-gradient-to-tr from-[var(--theme-1)] to-[var(--theme-3)]"><i className="fa-brands fa-github"></i></Link>
+                            <Link target="_blank" href="https://x.com/raxis.org/" className="bg-gradient-to-tr from-[var(--theme-1)] to-[var(--theme-3)]">
+                                <FontAwesomeIcon icon={faXTwitter} />
+                            </Link>
+                            <Link target="_blank" href="https://www.instagram.com/raxis.tech/" className="bg-gradient-to-tr from-[var(--theme-1)] to-[var(--theme-3)]">
+                                <FontAwesomeIcon icon={faInstagram} />
+                            </Link>
+                            <Link target="_blank" href="https://github.com/raxis-tech" className="bg-gradient-to-tr from-[var(--theme-1)] to-[var(--theme-3)]">
+                                <FontAwesomeIcon icon={faGithub} />
+                            </Link>
                         </div>
                         <div>
                         〒181-0004 <br/>東京都三鷹市新川6-22-20
