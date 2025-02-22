@@ -17,9 +17,9 @@ export default function Footer() {
                             />
                         </Link>
                         <div className="flex flex-nowrap justify-start gap-2 m-4" id="ft-sns-links">
-                            <Link href="https://x.com/raxis.org/" className="bg-gradient-to-tr from-[var(--theme-1)] to-[var(--theme-3)]"><i className="fa-brands fa-x-twitter"></i></Link>
-                            <Link href="https://www.instagram.com/raxis.tech/" className="bg-gradient-to-tr from-[var(--theme-1)] to-[var(--theme-3)]"><i className="fa-brands fa-instagram"></i></Link>
-                            <Link href="https://github.com/raxis-tech" className="bg-gradient-to-tr from-[var(--theme-1)] to-[var(--theme-3)]"><i className="fa-brands fa-github"></i></Link>
+                            <Link target="_blank" href="https://x.com/raxis.org/" className="bg-gradient-to-tr from-[var(--theme-1)] to-[var(--theme-3)]"><i className="fa-brands fa-x-twitter"></i></Link>
+                            <Link target="_blank" href="https://www.instagram.com/raxis.tech/" className="bg-gradient-to-tr from-[var(--theme-1)] to-[var(--theme-3)]"><i className="fa-brands fa-instagram"></i></Link>
+                            <Link target="_blank" href="https://github.com/raxis-tech" className="bg-gradient-to-tr from-[var(--theme-1)] to-[var(--theme-3)]"><i className="fa-brands fa-github"></i></Link>
                         </div>
                         <div>
                         〒181-0004 <br/>東京都三鷹市新川6-22-20
