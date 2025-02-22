@@ -26,3 +26,22 @@
     animation: rotateText 10s linear infinite;
     transform-origin: 100% 50%;
 }
+
+.slick-prev, .slick-next {
+    font-size: 30px;
+    color: #000000;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* 背景色と拡大アニメーション */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* 影をつけて浮かび上がる効果 */
+}
+
+.slick-prev:hover, .slick-next:hover {
+    background-color: rgba(0, 0, 0, 0.9); /* ホバー時の背景色を濃く */
+    transform: translateY(-50%) scale(1.1); /* ホバー時に少し拡大 */
+}
