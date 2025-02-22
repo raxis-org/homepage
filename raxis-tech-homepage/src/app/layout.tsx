@@ -28,15 +28,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      {/* ヘッダー */}
-      <Header/>
+      
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Header/>
         {children}
+        
+        <Footer/>
       </body>
-      {/* フッター */}
-      <Footer/>
     </html>
   );
 }
