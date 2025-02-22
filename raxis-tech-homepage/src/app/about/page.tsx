@@ -24,7 +24,7 @@ export default function AboutPage() {
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-4">ミッション・ビジョン</h2>
         <p>私たちの目指す未来についてはこちらをご覧ください。</p>
-        <Link href="/about/mission" className="text-blue-600 underline">
+        <Link href="/about/missions" className="text-blue-600 underline">
           ミッション・ビジョンを見る →
         </Link>
       </section>
