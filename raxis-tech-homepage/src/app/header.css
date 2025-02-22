@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header-content{
+    margin:0.5em;
+    padding:0.3em 0.5em;
+    border-radius:7px;
+    transition: all ease 0.3s;
+}
+.header-content:hover{
+    background-color: #edeff1 !important;
+}
+.header-content-en{
+    color:var(--theme-1);
+    font-weight:bold;
+    font-size:0.8rem;
+}
+.header-content-label{
+    font-weight: bold;
+    font-size:1rem;
+}
