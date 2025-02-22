@@ -4,7 +4,8 @@ const nextConfig: NextConfig = {
   output: "export",
   images:{
     loader: "default",
-    domains: ["raxistech.netlify.app","https://raxis.tech"],
+    domains: ["https://raxistech.netlify.app","https://raxis.tech"],
+    unoptimized: true,
   },
   
 };
