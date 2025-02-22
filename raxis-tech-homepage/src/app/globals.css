@@ -5,7 +5,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --theme-1: #6484f3;
+  --theme-1: #444afa;
+  --theme-2: #f546ef;
+  --theme-3: #5247e1;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,4 +21,21 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.hover-link a::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--ul-color);
+  bottom: -1px;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: transform 0.3s;
+}
+.hover-link a:hover::after {
+  transform: scale(1, 1);
+  transform-origin: right top;
 }
