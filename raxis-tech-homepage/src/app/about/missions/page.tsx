@@ -30,7 +30,7 @@ export default function MissionsPage() {
 }
 
 // 理念カードコンポーネント
-export function MissionCard({ title, description }: { title: string; description: string }) {
+function MissionCard({ title, description }: { title: string; description: string }) {
     return (
         <div className="p-6 bg-gray-100 rounded-lg shadow-md">
             <h2 className="text-xl font-semibold">{title}</h2>

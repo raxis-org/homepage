@@ -34,7 +34,7 @@ const eslintConfig = [
           // for non-exported functions
           "selector": "function",
           "modifiers": ["global"],
-          "format": ["camelCase"],
+          "format": ["camelCase","PascalCase"],
           "leadingUnderscore": "allow",
         },
         {

@@ -39,7 +39,7 @@ export default function MembersPage() {
 }
 
 // メンバーカードコンポーネント
-export function MemberCard({ name, role, description }: { name: string; role: string; description: string }) {
+function MemberCard({ name, role, description }: { name: string; role: string; description: string }) {
     return (
         <div className="p-6 bg-gray-100 rounded-lg shadow-md">
             <h2 className="text-xl font-semibold">{name}</h2>

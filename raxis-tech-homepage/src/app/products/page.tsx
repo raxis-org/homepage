@@ -47,7 +47,7 @@ export default function ProductsPage() {
 }
 
 // 事業内容カードコンポーネント
-export function ServiceCard({ title, description, link }: { title: string; description: string; link: string }) {
+function ServiceCard({ title, description, link }: { title: string; description: string; link: string }) {
   return (
     <Link href={link} className="block p-6 bg-gray-100 rounded-lg shadow-md hover:bg-gray-200 transition">
       <h2 className="text-xl font-semibold">{title}</h2>
