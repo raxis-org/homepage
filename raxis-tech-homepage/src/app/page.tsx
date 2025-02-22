@@ -6,7 +6,7 @@ export default function Home() {
     <div className="font-[family-name:var(--font-geist-sans)]">
 
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <div className="hero w-[100vw] h-[60vh] m-[-80px] pt-[150px] bg-gradient-to-tr from-purple-200 to-indigo-200 py-8">
+        <div className="hero w-[100vw] h-[60vh] mt-[-80px] pt-[150px] bg-gradient-to-tr from-purple-200 to-indigo-200 py-8">
           <div className="hero-inner lg:w-[1024px] m-auto flex flex-nowrap justify-between items-center">
             <div className="hero-left">
               <Image
@@ -27,7 +27,7 @@ export default function Home() {
         </div>
 
         <div id="main-products" className="w-[100vw]">
-          <div id="main-products-inner" className="md:w-[1024px] mx-auto flex flex-nowrap justify-between items-center">
+          <div id="main-products-inner" className="container w-[calc(100%-4rem)] mx-auto flex flex-nowrap justify-between items-center">
             <div className="main-product-wrapper">
               <Image
                 className="rounded-full m-auto"
