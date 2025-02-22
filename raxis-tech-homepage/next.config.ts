@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   output: "standalone",
   images:{
     loader: "default",
-    domains: ["https://raxistech.netlify.app","https://raxis.tech"],
+    domains: ["raxistech.netlify.app","https://raxis.tech"],
   },
   
 };
