@@ -24,7 +24,7 @@ pushした後は、[ここ](https://github.com/raxis-org/homepage)からpull req
 
 ## コードルール（順次追加予定）
 ```bash
-npm run lint
+npm run lint #このコマンドを実行することで自動的に修正してくれる。
 ```
 具体的なlintルールの内容としては、  
 - 命名規則：lowerCamelCase
