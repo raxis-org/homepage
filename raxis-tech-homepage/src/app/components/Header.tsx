@@ -15,29 +15,29 @@ export default function Header() {
                     priority
                 />
                 <h1 className="font-sans font-bold text-[2rem] text-blue-700"></h1>
-                
+
                 </div>
                 <div id="header-contents-wrapper" className="flex flex-nowrap justify-between">
                     <a className="header-content" href="#">
                         <div className="header-content-en">ABOUT</div>
                         <div className="header-content-label">Raxisとは</div>
                     </a>
-                    
+
                     <a className="header-content" href="#">
                         <div className="header-content-en">PRODUCTS</div>
                         <div className="header-content-label">事業内容</div>
                     </a>
-                    
+
                     <a className="header-content" href="#">
                         <div className="header-content-en">WORKS</div>
                         <div className="header-content-label">ポートフォリオ</div>
                     </a>
-                    
+
                     <a className="header-content" href="#">
                         <div className="header-content-en">BLOG</div>
                         <div className="header-content-label">ブログ</div>
                     </a>
-                    
+
                     <a className="header-content" href="#">
                         <div className="header-content-en">CONTACT</div>
                         <div className="header-content-label">お問い合わせ</div>

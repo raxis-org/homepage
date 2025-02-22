@@ -5,41 +5,40 @@ export default function ServicesPage() {
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold mb-6">事業内容</h1>
-
       {/* 事業内容リスト */}
       <div className="grid md:grid-cols-2 gap-6">
         {/* Webアプリ・Webサイト制作 */}
-        <ServiceCard 
-          title="Webアプリ・Webサイト制作" 
-          description="最先端の技術を活用したWeb開発を行います。" 
+        <ServiceCard
+          title="Webアプリ・Webサイト制作"
+          description="最先端の技術を活用したWeb開発を行います。"
           link="/services/web-dev"
         />
 
         {/* その他プログラム業務委託 */}
-        <ServiceCard 
-          title="その他プログラム業務委託" 
-          description="システム開発やAI開発の業務委託を承ります。" 
+        <ServiceCard
+          title="その他プログラム業務委託"
+          description="システム開発やAI開発の業務委託を承ります。"
           link="/services/outsourcing"
         />
 
         {/* 麻雀アプリ */}
-        <ServiceCard 
-          title="麻雀アプリ開発" 
-          description="オンライン麻雀アプリの開発・運営を行っています。" 
+        <ServiceCard
+          title="麻雀アプリ開発"
+          description="オンライン麻雀アプリの開発・運営を行っています。"
           link="/services/mahjong"
         />
 
         {/* プラットフォームづくり */}
-        <ServiceCard 
-          title="プラットフォームづくり" 
-          description="新規プラットフォームの企画・開発を支援します。" 
+        <ServiceCard
+          title="プラットフォームづくり"
+          description="新規プラットフォームの企画・開発を支援します。"
           link="/services/platform"
         />
 
         {/* SNS運用代行 */}
-        <ServiceCard 
-          title="SNS運用代行" 
-          description="SNSアカウントの戦略立案から運用までサポートします。" 
+        <ServiceCard
+          title="SNS運用代行"
+          description="SNSアカウントの戦略立案から運用までサポートします。"
           link="/services/sns"
         />
       </div>
@@ -48,7 +47,7 @@ export default function ServicesPage() {
 }
 
 // 事業内容カードコンポーネント
-function ServiceCard({ title, description, link }: { title: string; description: string; link: string }) {
+export function ServiceCard({ title, description, link }: { title: string; description: string; link: string }) {
   return (
     <Link href={link} className="block p-6 bg-gray-100 rounded-lg shadow-md hover:bg-gray-200 transition">
       <h2 className="text-xl font-semibold">{title}</h2>
