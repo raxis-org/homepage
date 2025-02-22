@@ -33,7 +33,7 @@ export default function Footer() {
                             </Link>
                         </div>
                         <div>
-                        〒181-0004 <br/>東京都三鷹市新川6-22-20
+                            〒107-0052 <br/>東京都港区赤坂1丁目1番地
                         </div>
                     </div>
                     <div id="ft-sitemap" className="smmax:hidden w-[calc(100%-250px-50px)] ml-[50px] flex flex-nowrap justify-end items-start gap-4 hover-link">
