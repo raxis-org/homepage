@@ -23,11 +23,14 @@ git push origin ブランチ名
 pushした後は、[ここ](https://github.com/raxis-org/homepage)からpull requestを出すこと。
 
 ## コードルール（順次追加予定）
-lint設定を行って`npm run lint`により自動で体裁を整えてくれるようにする。  
+```bash
+npm run lint
+```
 具体的なlintルールの内容としては、  
 - 命名規則：lowerCamelCase
 - ロジック分岐：簡単な論理分岐はcase,switchではなくif,elseを用いる  
-などがある。
+などがある。（eslint.config.mjsに記載）
+インデントが揃ってないやつを修正するのもやりたい。
 
 # 0. 作成目的・背景
 

@@ -18,30 +18,30 @@ export default function Header() {
                         />
                     </Link>
                 <h1 className="font-sans font-bold text-[2rem] text-blue-700"></h1>
-                
+
                 </div>
                 <div id="header-contents-wrapper" className="hidden md:flex flex-nowrap justify-between h-full">
-                    <Link className="header-content" href="#">
+                    <Link className="header-content" href="/about">
                         <div className="header-content-en">ABOUT</div>
                         <div className="header-content-label">Raxisとは</div>
                     </Link>
                     
-                    <Link className="header-content" href="/about">
+                    <Link className="header-content" href="/products">
                         <div className="header-content-en">PRODUCTS</div>
                         <div className="header-content-label">事業内容</div>
                     </Link>
                     
-                    <Link className="header-content" href="#">
+                    <Link className="header-content" href="/works">
                         <div className="header-content-en">WORKS</div>
                         <div className="header-content-label">ポートフォリオ</div>
                     </Link>
                     
-                    <Link className="header-content" href="#">
+                    <Link className="header-content" href="/blog">
                         <div className="header-content-en">BLOG</div>
                         <div className="header-content-label">ブログ</div>
                     </Link>
                     
-                    <Link className="header-content" href="#">
+                    <Link className="header-content" href="/contact">
                         <div className="header-content-en">CONTACT</div>
                         <div className="header-content-label">お問い合わせ</div>
                     </Link>
