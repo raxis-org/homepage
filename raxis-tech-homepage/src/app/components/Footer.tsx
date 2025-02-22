@@ -35,7 +35,7 @@ export default function Footer() {
                                 <Link href="/about/members">メンバー</Link>
                             </div>
                         </div>
-                        
+
                         <div className="ft-sitemap-box">
                             <h1 className="ft-sitemap-title">事業内容</h1>
                             <div className="ft-sitemap-ls">
@@ -46,7 +46,7 @@ export default function Footer() {
                                 <Link href="#">SNS運用代行</Link>
                             </div>
                         </div>
-                        
+
                         <div className="ft-sitemap-box">
                             <h1 className="ft-sitemap-title">制作物</h1>
                             <div className="ft-sitemap-ls">
@@ -55,7 +55,7 @@ export default function Footer() {
                                 <Link href="#">メンバー紹介</Link>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>

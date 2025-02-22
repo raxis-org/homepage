@@ -26,7 +26,7 @@ export default function MembersPage() {
                     role="システムマネージャー"
                     description="システムの管理を担当。"
                 />
-                
+
                 {/* 黒川 */}
                 <MemberCard
                     name="黒川"

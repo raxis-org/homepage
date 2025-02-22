@@ -25,22 +25,22 @@ export default function Header() {
                         <div className="header-content-en">ABOUT</div>
                         <div className="header-content-label">Raxisとは</div>
                     </Link>
-                    
+
                     <Link className="header-content" href="/products">
                         <div className="header-content-en">PRODUCTS</div>
                         <div className="header-content-label">事業内容</div>
                     </Link>
-                    
+
                     <Link className="header-content" href="/works">
                         <div className="header-content-en">WORKS</div>
                         <div className="header-content-label">ポートフォリオ</div>
                     </Link>
-                    
+
                     <Link className="header-content" href="/blog">
                         <div className="header-content-en">BLOG</div>
                         <div className="header-content-label">ブログ</div>
                     </Link>
-                    
+
                     <Link className="header-content" href="/contact">
                         <div className="header-content-en">CONTACT</div>
                         <div className="header-content-label">お問い合わせ</div>

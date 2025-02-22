@@ -24,7 +24,7 @@ export default function MissionsPage() {
                     description="洛北にある銀杏は全て刈り取ろう"
                 />
             </div>
-            
+
         </div>
     );
 }

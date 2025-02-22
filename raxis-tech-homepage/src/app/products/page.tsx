@@ -8,7 +8,7 @@ export default function ProductsPage() {
       {/* 事業内容リスト */}
       <div className="grid md:grid-cols-2 gap-6">
         {/* Webアプリ・Webサイト制作 */}
-        <ServiceCard 
+        <ServiceCard
           title="Webアプリ・Webサイト制作"
           description="最先端の技術を活用したWeb開発を行います。"
           link="/products/web-dev"
