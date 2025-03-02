@@ -1,6 +1,9 @@
 // フッターコンポーネント
+import { faXTwitter, faInstagram, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
+
 export default function Footer() {
     return (
         <footer className="">
@@ -16,43 +19,49 @@ export default function Footer() {
                                 priority
                             />
                         </Link>
-                        <div className="flex flex-nowrap justify-start gap-2 m-4" id="ft-sns-links">
-                            <Link href="https://x.com/raxis.org/" className="bg-gradient-to-tr from-[var(--theme-1)] to-[var(--theme-3)]"><i className="fa-brands fa-x-twitter"></i></Link>
-                            <Link href="https://www.instagram.com/raxis.tech/" className="bg-gradient-to-tr from-[var(--theme-1)] to-[var(--theme-3)]"><i className="fa-brands fa-instagram"></i></Link>
-                            <Link href="https://github.com/raxis-tech" className="bg-gradient-to-tr from-[var(--theme-1)] to-[var(--theme-3)]"><i className="fa-brands fa-github"></i></Link>
+                        <div className="flex flex-nowrap justify-start gap-2 m-4 text-white" id="ft-sns-links">
+                            <Link target="_blank" href="https://x.com/raxis.org/">
+                                <FontAwesomeIcon icon={faXTwitter} size="3x"/>
+                            </Link>
+                            <Link target="_blank" href="https://www.instagram.com/raxis.tech/">
+                                <FontAwesomeIcon icon={faInstagram} size="3x"/>
+                            </Link>
+                            <Link target="_blank" href="https://github.com/raxis-tech">
+                                <FontAwesomeIcon icon={faGithub} size="3x"/>
+                            </Link>
                         </div>
                         <div>
-                        〒181-0004 <br/>東京都三鷹市新川6-22-20
+                            〒107-0052 <br/>東京都港区赤坂1丁目1番地
                         </div>
                     </div>
-                    <div id="ft-sitemap" className="smmax:hidden w-[calc(100%-250px-50px)] ml-[50px] flex flex-nowrap justify-right items-start gap-4 hover-link-black">
+                    <div id="ft-sitemap" className="smmax:hidden w-[calc(100%-250px-50px)] ml-[50px] flex flex-nowrap justify-end items-start gap-4 hover-link">
                         <div className="ft-sitemap-box">
-                            <h1 className="ft-sitemap-title">Raxisについて</h1>
+                            <h1 className="ft-sitemap-title"><Link href="/about">Raxisとは</Link></h1>
                             <div className="ft-sitemap-ls">
                                 <Link href="/about">会社概要</Link>
                                 <Link href="/about/missions">ミッション・ビジョン</Link>
-                                <Link href="/about/contact">お問い合わせ/FAQ</Link>
+                                <Link href="/contact">お問い合わせ/FAQ</Link>
                                 <Link href="/about/members">メンバー</Link>
                             </div>
                         </div>
 
                         <div className="ft-sitemap-box">
-                            <h1 className="ft-sitemap-title">事業内容</h1>
+                            <h1 className="ft-sitemap-title"><Link href="/products">事業内容</Link></h1>
                             <div className="ft-sitemap-ls">
-                                <Link href="#">webアプリ・サイト制作</Link>
-                                <Link href="#">プログラム委託業務</Link>
-                                <Link href="#">麻雀アプリ開発</Link>
-                                <Link href="#">プラットフォーム制作</Link>
-                                <Link href="#">SNS運用代行</Link>
+                                <Link href="/products/web-dev">webアプリ・サイト制作</Link>
+                                <Link href="/products/outsourcing">プログラム委託業務</Link>
+                                <Link href="/products/mahjong-app">麻雀アプリ開発</Link>
+                                <Link href="/products/platform-creation">プラットフォーム制作</Link>
+                                <Link href="/products/sns-management">SNS運用代行</Link>
                             </div>
                         </div>
 
                         <div className="ft-sitemap-box">
-                            <h1 className="ft-sitemap-title">制作物</h1>
+                            <h1 className="ft-sitemap-title"><Link href="/works">制作物</Link></h1>
                             <div className="ft-sitemap-ls">
-                                <Link href="#">ポートフォリオ </Link>
-                                <Link href="#">導入事例</Link>
-                                <Link href="#">メンバー紹介</Link>
+                                <Link href="/works">ポートフォリオ </Link>
+                                <Link href="/works">導入事例</Link>
+                                <Link href="/works">利用者の声</Link>
                             </div>
                         </div>
 

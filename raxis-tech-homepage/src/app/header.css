@@ -13,7 +13,11 @@
     vertical-align: center;
 }
 .header-content:hover{
-    background-color: #edeff1 !important;
+    background-color: #333;
+    color: #eee;
+}
+.header-content:hover .header-content-en{
+    color: #eee;
 }
 .header-content-en{
     color:var(--theme-1);
@@ -22,21 +26,41 @@
 }
 .header-content-label{
     font-weight: bold;
-    font-size:1rem;
+    font-size:0.9rem;
 }
-.hover-link a::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: var(--ul-color);
-    bottom: -1px;
-    transform: scale(0, 1);
-    transform-origin: left top;
-    transition: transform 0.3s;
+#hd-menu-ls a{
+    color: #333;
+    font-size:1.5rem;
+    font-weight:bold;
 }
-.hover-link a:hover::after {
-    transform: scale(1, 1);
-    transform-origin: right top;
+.header-menu-en{
+    color: var(--theme-1);
+    font-size: 1rem;
+    font-weight:bold;
+}
+#hd-menu-ls > a{
+    padding:0.5rem 1rem;
+}
+#hd-menu-ls > a:hover{
+    background-color: var(--theme-pale);
+}
+header.sm-disp{
+    box-shadow:0 0 0 2000px #00000090;
+}
+header.sm-disp #hd-inner-top{
+    margin: auto;
+}
+#hd-menu-button div{
+    transition: all ease 0.2s;
+}
+.sm-disp #hd-menu-button-1{
+    transform: rotate(45deg);
+    transform-origin: left;
+}
+.sm-disp #hd-menu-button-2{
+    width: 0px;
+}
+.sm-disp #hd-menu-button-3{
+    transform: rotate(-45deg);
+    transform-origin: left;
 }
