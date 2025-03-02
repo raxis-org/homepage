@@ -1,5 +1,5 @@
 // フッターコンポーネント
-import { faXTwitter, faInstagram, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faSquareXTwitter, faSquareInstagram, faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
@@ -19,15 +19,15 @@ export default function Footer() {
                                 priority
                             />
                         </Link>
-                        <div className="flex flex-nowrap justify-start gap-2 m-4 text-white" id="ft-sns-links">
+                        <div className="flex flex-nowrap justify-start gap-2 m-4 text-black" id="ft-sns-links">
                             <Link target="_blank" href="https://x.com/raxis.org/">
-                                <FontAwesomeIcon icon={faXTwitter} size="3x"/>
+                                <FontAwesomeIcon icon={faSquareXTwitter} size="3x"/>
                             </Link>
                             <Link target="_blank" href="https://www.instagram.com/raxis.tech/">
-                                <FontAwesomeIcon icon={faInstagram} size="3x"/>
+                                <FontAwesomeIcon icon={faSquareInstagram} size="3x"/>
                             </Link>
                             <Link target="_blank" href="https://github.com/raxis-tech">
-                                <FontAwesomeIcon icon={faGithub} size="3x"/>
+                                <FontAwesomeIcon icon={faSquareGithub} />
                             </Link>
                         </div>
                         <div>
