@@ -28,20 +28,20 @@
     font-weight: bold;
     font-size:0.9rem;
 }
-.header-menu-en{
-    color: var(--theme-1);
-    font-size: 1rem;
-    font-weight:bold;
-}
-#hd-menu-ls > div{
-    padding:0.5rem 1rem;
-}
 #hd-menu-ls a{
     color: #333;
     font-size:1.5rem;
     font-weight:bold;
 }
-#hd-menu-ls > div:hover{
+.header-menu-en{
+    color: var(--theme-1);
+    font-size: 1rem;
+    font-weight:bold;
+}
+#hd-menu-ls > a{
+    padding:0.5rem 1rem;
+}
+#hd-menu-ls > a:hover{
     background-color: var(--theme-pale);
 }
 header.sm-disp{

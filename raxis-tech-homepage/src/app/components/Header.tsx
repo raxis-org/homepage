@@ -7,10 +7,8 @@ import { useEffect } from 'react';
 
 export default function Header() {
     useEffect(() => {
-        $("#hd-menu-button, #hd-menu-ls div").on("click",function(){
-            console.log("a")
+        $("#hd-menu-button, #hd-menu-ls > a").on("click",function(){
             $("header").toggleClass("sm-disp");
-
             $("#hd-inner-bottom").slideToggle(200);
         });
     }, []);
@@ -68,12 +66,12 @@ export default function Header() {
 
             <div id="hd-inner-bottom" className="hidden w-full bg-white my-4">
                 <div className="flex flex-col justify-start align-center text-left" id="hd-menu-ls">
-                    <div className="top"><div className="header-menu-en">HOME</div><Link href="/">ホーム</Link></div>
-                    <div><Link href="/about"><div className="header-menu-en">ABOUT</div>Raxisとは</Link></div>
-                    <div><Link href="/products"><div className="header-menu-en">PRODUCTS</div>事業内容</Link></div>
-                    <div><Link href="/works"><div className="header-menu-en">WORKS</div>ポートフォリオ</Link></div>
-                    <div><Link href="/blog"><div className="header-menu-en">BLOG</div>ブログ</Link></div>
-                    <div><Link href="/contact"><div className="header-menu-en">CONTACT</div>お問い合わせ</Link></div>
+                    <Link href="/"><div className="top"><div className="header-menu-en">HOME</div>ホーム</div></Link>
+                    <Link href="/about"><div><div className="header-menu-en">ABOUT</div>Raxisとは</div></Link>
+                    <Link href="/products"><div><div className="header-menu-en">PRODUCTS</div>事業内容</div></Link>
+                    <Link href="/works"><div><div className="header-menu-en">WORKS</div>ポートフォリオ</div></Link>
+                    <Link href="/blog"><div><div className="header-menu-en">BLOG</div>ブログ</div></Link>
+                    <Link href="/contact"><div><div className="header-menu-en">CONTACT</div>お問い合わせ</div></Link>
                 </div>
             </div>
         </header>
