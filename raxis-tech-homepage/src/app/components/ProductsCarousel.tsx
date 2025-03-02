@@ -1,14 +1,14 @@
 "use client";
 
+import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
-import Slider from "react-slick";
+import Slider, {CustomArrowProps} from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
-function CustomPrevArrow(props: any) {
+function CustomPrevArrow(props: CustomArrowProps) {
     const { onClick } = props;
     return (
         <div className="absolute left-[-50px] top-1/2 -translate-y-1/2 z-10 cursor-pointer" onClick={onClick}>
@@ -17,7 +17,7 @@ function CustomPrevArrow(props: any) {
     );
 }
 
-function CustomNextArrow(props: any) {
+function CustomNextArrow(props: CustomArrowProps) {
     const { onClick } = props;
     return (
         <div className="absolute right-[-50px] top-1/2 -translate-y-1/2 z-10 cursor-pointer" onClick={onClick}>
