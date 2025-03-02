@@ -46,7 +46,7 @@ export default function Footer() {
                         </div>
 
                         <div className="ft-sitemap-box">
-                            <h1 className="ft-sitemap-title"><Link href="/producs">事業内容</Link></h1>
+                            <h1 className="ft-sitemap-title"><Link href="/products">事業内容</Link></h1>
                             <div className="ft-sitemap-ls">
                                 <Link href="/products/web-dev">webアプリ・サイト制作</Link>
                                 <Link href="/products/outsourcing">プログラム委託業務</Link>

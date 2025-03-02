@@ -7,15 +7,11 @@ import { useEffect } from 'react';
 
 export default function Header() {
     useEffect(() => {
-        $("#hd-menu-button").on("click",function(){
+        $("#hd-menu-button, #hd-menu-ls div").on("click",function(){
+            console.log("a")
             $("header").toggleClass("sm-disp");
 
-            $("#hd-inner-bottom").slideToggle(300);
-            // if($("header").hasClass("sm-disp")){
-            //     $("#hd-inner-bottom").show(300)
-            // }else{
-            //     $("#hd-inner-bottom").css("display","none")
-            // }
+            $("#hd-inner-bottom").slideToggle(200);
         });
     }, []);
 
@@ -63,7 +59,7 @@ export default function Header() {
                     </Link>
                 </div>
 
-                <div id="hd-menu-button" className="sm:hidden h-[30px] flex flex-col justify-between">
+                <div id="hd-menu-button" className="md:hidden h-[30px] flex flex-col justify-between">
                     <div id="hd-menu-button-1" className="w-[40px] h-[3px] bg-[var(--theme-1)]"></div>
                     <div id="hd-menu-button-2" className="w-[40px] h-[3px] bg-[var(--theme-1)]"></div>
                     <div id="hd-menu-button-3" className="w-[40px] h-[3px] bg-[var(--theme-1)]"></div>

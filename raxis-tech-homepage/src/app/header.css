@@ -13,7 +13,6 @@
     vertical-align: center;
 }
 .header-content:hover{
-    /* background-color: #edeff1 !important; */
     background-color: #333;
     color: #eee;
 }
@@ -52,7 +51,7 @@ header.sm-disp #hd-inner-top{
     margin: auto;
 }
 #hd-menu-button div{
-    transition: all ease 0.3s;
+    transition: all ease 0.2s;
 }
 .sm-disp #hd-menu-button-1{
     transform: rotate(45deg);
