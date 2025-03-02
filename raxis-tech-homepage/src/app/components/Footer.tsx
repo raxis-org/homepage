@@ -7,8 +7,8 @@ import Link from "next/link";
 export default function Footer() {
     return (
         <footer className="">
-            <div className="w-[100vw] bg-white p-8">
-                <div className="lg:w-[1024px] m-auto flex flex-nowrap justify-between items-top">
+            <div className="w-[100vw] mt-24 p-8 pt-12 border-t-8 border-[var(--theme-1)]">
+                <div className="lg:w-[1024px] m-auto flex-column justify-start items-start md:flex md:flex-nowrap md:justify-between items-top">
                     <div className="flex flex-col w-[250px]">
                         <Link href="/">
                             <Image
@@ -34,7 +34,7 @@ export default function Footer() {
                             〒107-0052 <br/>東京都港区赤坂1丁目1番地
                         </div>
                     </div>
-                    <div id="ft-sitemap" className="smmax:hidden w-[calc(100%-250px-50px)] ml-[50px] flex flex-nowrap justify-end items-start gap-4 hover-link">
+                    <div id="ft-sitemap" className="w-full md:w-[calc(100%-250px-50px)] mt-8 md:mt-0 md:ml-[50px] flex-column flex-nowrap justify-start items-start md:flex md:justify-end md:gap-4 hover-link">
                         <div className="ft-sitemap-box">
                             <h1 className="ft-sitemap-title"><Link href="/about">Raxisとは</Link></h1>
                             <div className="ft-sitemap-ls">
@@ -69,13 +69,13 @@ export default function Footer() {
                 </div>
             </div>
             <div className="w-full bg-slate-800 p-4">
-                <div className="container lg:w-[1000px] m-auto flex flex-nowrap justify-between items-center">
-                    <div>
-                        <div className="text-gray-400">Copyright © 2025 All Right Reserved.</div>
-                    </div>
+                <div className="container lg:w-[1000px] m-auto flex flex-col items-start md:flex-row md:flex-nowrap md:justify-between md:items-center">
                     <div className="flex flex-nowrap justify-start text-gray-400 gap-8">
                         <Link href="#">プライバシーポリシー</Link>
                         <Link href="#">cookieポリシー</Link>
+                    </div>
+                    <div>
+                        <div className="inline-block md:border-none border-t-[2px] border-[#777] mt-4 md:mt-0 pt-4 md:pt-0 text-gray-400 text-sm">Copyright © 2025 All Right Reserved.</div>
                     </div>
                 </div>
             </div>
