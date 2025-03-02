@@ -8,19 +8,15 @@ import { useEffect } from 'react';
 export default function Header() {
     useEffect(() => {
         $("#hd-menu-button").on("click",function(){
-            $("header").toggleClass("sm-disp")
-            
-            $("#hd-inner-bottom").slideToggle(300)
+            $("header").toggleClass("sm-disp");
+
+            $("#hd-inner-bottom").slideToggle(300);
             // if($("header").hasClass("sm-disp")){
             //     $("#hd-inner-bottom").show(300)
             // }else{
             //     $("#hd-inner-bottom").css("display","none")
             // }
-        })   
-        $("#hd-menu").on("click",function(){
-            $("header").toggleClass("sm-disp")
-            $("#hd-inner-bottom").slideToggle(300)
-        }) 
+        });
     }, []);
 
     return (
@@ -73,7 +69,7 @@ export default function Header() {
                     <div id="hd-menu-button-3" className="w-[40px] h-[3px] bg-[var(--theme-1)]"></div>
                 </div>
             </div>
-            
+
             <div id="hd-inner-bottom" className="hidden w-full bg-white my-4">
                 <div className="flex flex-col justify-start align-center text-left" id="hd-menu-ls">
                     <div className="top"><div className="header-menu-en">HOME</div><Link href="/">ホーム</Link></div>
