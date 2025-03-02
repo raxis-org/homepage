@@ -13,7 +13,12 @@
     vertical-align: center;
 }
 .header-content:hover{
-    background-color: #edeff1 !important;
+    /* background-color: #edeff1 !important; */
+    background-color: #333;
+    color: #eee;
+}
+.header-content:hover .header-content-en{
+    color: #eee;
 }
 .header-content-en{
     color:var(--theme-1);
@@ -22,5 +27,21 @@
 }
 .header-content-label{
     font-weight: bold;
-    font-size:1rem;
+    font-size:0.9rem;
+}
+.header-menu-en{
+    color: var(--theme-1);
+    font-size: 1.5rem;
+    font-weight:bold;
+}
+#header-menu-ls > div{
+    padding:1rem 0;
+}
+#header-menu-ls a{
+    color: #333;
+    font-size:2rem;
+    font-weight:bold;
+}
+#header-menu-ls > div:hover{
+    background-color: var(--theme-pale);
 }

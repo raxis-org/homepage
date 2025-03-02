@@ -8,6 +8,8 @@
   --theme-1: #444afa;
   --theme-2: #f546ef;
   --theme-3: #5247e1;
+  --theme-light: #cfd0f7;
+  --theme-pale: #f0f0ff;
 }
 
 @media (prefers-color-scheme: dark) {
