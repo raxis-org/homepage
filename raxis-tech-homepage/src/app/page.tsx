@@ -19,8 +19,8 @@ export default function Home() {
               />
             </div>
             <div className="hero-right">
-              <div className="text-6xl bg-gradient-to-r from-indigo-600 to-blue-400 font-bold text-transparent bg-clip-text">Create New Value<br></br>from Tech & Papia</div>
-              <div className="hero-right-label mt-4 font-bold text-xl text-gray-600">テクノロジーとカモで新たな価値を創る</div>
+              <div className="text-6xl bg-gradient-to-r from-indigo-600 to-blue-400 font-bold text-transparent bg-clip-text">The axis of technology<br></br>shaping the future</div>
+              <div className="hero-right-label mt-4 font-bold text-xl text-gray-600">未来を支える技術の軸を</div>
             </div>
           </div>
         </div>
