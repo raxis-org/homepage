@@ -1,10 +1,41 @@
 // フッターコンポーネント
+"use client"
 import { faSquareXTwitter, faSquareInstagram, faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect,useState } from 'react';
 
 export default function Footer() {
+    const [menuData, setMenuData] = useState<any>(null);
+
+    useEffect(() => {
+        fetch("/data/menuData.json")
+            .then(response => response.json())
+            .then(data => setMenuData(data))
+            .catch(error => console.error("Error loading menu data:", error));
+    }, []);
+
+    function FooterContentCard({ name }: { name: string}) {
+        if (menuData){
+            let subLink: string[][] = menuData[name]["sub-link"]
+            return(
+                <div className="ft-sitemap-box">
+                    <h1 className="ft-sitemap-title"><Link href={menuData[name]["top-link"]}>{menuData[name]["t-ja"]}</Link></h1>
+                    <div className="ft-sitemap-ls">
+                        {subLink.map((item, index) => (
+                            <Link key={index} href={item[1]}>{item[0]}</Link>
+                        ))}
+                    </div>
+                </div>
+            )
+        }else{
+            return(
+                <div>loading...</div>
+            )
+        }
+    }
+
     return (
         <footer className="">
             <div className="w-[100vw] mt-24 p-8 pt-12 border-t-8 border-[var(--theme-1)]">
@@ -35,35 +66,10 @@ export default function Footer() {
                         </div>
                     </div>
                     <div id="ft-sitemap" className="w-full md:w-[calc(100%-250px-50px)] mt-8 md:mt-0 md:ml-[50px] flex-column flex-nowrap justify-start items-start md:flex md:justify-end md:gap-4 hover-link">
-                        <div className="ft-sitemap-box">
-                            <h1 className="ft-sitemap-title"><Link href="/about">Raxisとは</Link></h1>
-                            <div className="ft-sitemap-ls">
-                                <Link href="/about">会社概要</Link>
-                                <Link href="/about/missions">ミッション・ビジョン</Link>
-                                <Link href="/contact">お問い合わせ/FAQ</Link>
-                                <Link href="/about/members">メンバー</Link>
-                            </div>
-                        </div>
 
-                        <div className="ft-sitemap-box">
-                            <h1 className="ft-sitemap-title"><Link href="/products">事業内容</Link></h1>
-                            <div className="ft-sitemap-ls">
-                                <Link href="/products/web-dev">webアプリ・サイト制作</Link>
-                                <Link href="/products/outsourcing">プログラム委託業務</Link>
-                                <Link href="/products/mahjong-app">麻雀アプリ開発</Link>
-                                <Link href="/products/platform-creation">プラットフォーム制作</Link>
-                                <Link href="/products/sns-management">SNS運用代行</Link>
-                            </div>
-                        </div>
-
-                        <div className="ft-sitemap-box">
-                            <h1 className="ft-sitemap-title"><Link href="/works">制作物</Link></h1>
-                            <div className="ft-sitemap-ls">
-                                <Link href="/works">ポートフォリオ </Link>
-                                <Link href="/works">導入事例</Link>
-                                <Link href="/works">利用者の声</Link>
-                            </div>
-                        </div>
+                        <FooterContentCard name="about"/>
+                        <FooterContentCard name="products"/>
+                        <FooterContentCard name="works"/>
 
                     </div>
                 </div>
@@ -75,7 +81,7 @@ export default function Footer() {
                         <Link href="#">cookieポリシー</Link>
                     </div>
                     <div>
-                        <div className="inline-block md:border-none border-t-[2px] border-[#777] mt-4 md:mt-0 pt-4 md:pt-0 text-gray-400 text-sm">Copyright © 2025 All Right Reserved.</div>
+                        <div className="inline-block md:border-none border-t-[2px] border-[#777] mt-4 md:mt-0 pt-4 md:pt-0 text-gray-400 text-sm">Copyright © 2025 Raxis.tech</div>
                     </div>
                 </div>
             </div>

@@ -2,29 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-.header-content{
+.hd-content{
     display: flex;
+    width:110px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding:0 1rem;
+    padding:0 0.5rem;
     height:100%;
     transition: all ease 0.3s;
     vertical-align: center;
 }
-.header-content:hover{
+.hd-content:hover{
     background-color: #333;
     color: #eee;
 }
-.header-content:hover .header-content-en{
+.hd-content:hover .hd-content-en{
     color: #eee;
 }
-.header-content-en{
+.hd-content-en{
     color:var(--theme-1);
     font-weight:bold;
     font-size:0.8rem;
 }
-.header-content-label{
+.hd-content-label{
     font-weight: bold;
     font-size:0.9rem;
 }
@@ -33,7 +34,7 @@
     font-size:1.5rem;
     font-weight:bold;
 }
-.header-menu-en{
+.hd-menu-en{
     color: var(--theme-1);
     font-size: 1rem;
     font-weight:bold;

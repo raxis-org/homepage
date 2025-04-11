@@ -1,0 +1,35 @@
+{
+    "about":{
+        "t-ja":"Raxisとは",
+        "t-en":"ABOUT",
+        "top-link":"/about",
+        "sub-link":[
+            ["会社概要","/about"],
+            ["ミッション・ビジョン","/about/missions"],
+            ["お問い合わせ/FAQ","/contact"],
+            ["メンバー","/about/members"]
+        ]
+    },
+    "products":{
+        "t-ja":"事業内容",
+        "t-en":"SERVICES",
+        "top-link":"/products",
+        "sub-link":[
+            ["webアプリ・サイト制作","/products/web-dev"],
+            ["プログラム委託業務","/products/outsourcing"],
+            ["麻雀アプリ開発","/products/mahjong-app"],
+            ["プラットフォーム制作","/products/platform-creation"],
+            ["SNS運用代行","/products/sns-management"]
+        ]
+    },
+    "works":{
+        "t-ja":"制作物",
+        "t-en":"WORKS",
+        "top-link":"/works",
+        "sub-link":[
+            ["ポートフォリオ","/works"],
+            ["導入事例","/works"],
+            ["利用者の声","/works"]
+        ]
+    }
+}
