@@ -1,8 +1,10 @@
 "use client";
 
-import { useState } from 'react';
+import { useRouter } from 'next/navigation';
+import React, { useState } from 'react';
 
 export default function ContactPage() {
+    const router = useRouter();
     const [formData, setFormData] = useState({
         inquiryType: '',
         name: '',
@@ -15,10 +17,44 @@ export default function ContactPage() {
         privacyPolicy: false
     });
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const resetForm = () => {
+        setFormData({
+            inquiryType: '',
+            name: '',
+            email: '',
+            category: '',
+            content: '',
+            phone: '',
+            company: '',
+            preferredContact: 'email',
+            privacyPolicy: false
+        });
+    };
+
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        // ここにフォーム送信のロジックを実装
-        console.log(formData);
+
+        try {
+            const form = e.target as HTMLFormElement;
+            const formData = new FormData(form);
+
+            const response = await fetch('/', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams(formData as unknown as URLSearchParams).toString()
+            });
+
+            if (response.ok) {
+                alert('お問い合わせを受け付けました。担当者より折り返しご連絡いたします。');
+                resetForm();
+                router.push('/contact?status=success');
+            } else {
+                throw new Error('送信に失敗しました');
+            }
+        } catch (error) {
+            alert('申し訳ありません。送信に失敗しました。時間をおいて再度お試しください。');
+            console.error('Form submission error:', error);
+        }
     };
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -43,7 +79,7 @@ export default function ContactPage() {
                 <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-[var(--theme-1)] to-[var(--theme-2)] text-transparent bg-clip-text">お問い合わせ</h1>
                 <p className="text-gray-600">ご質問・ご相談など、お気軽にお問い合わせください。</p>
             </div>
-            
+
             <div className="grid md:grid-cols-2 gap-8 mb-12">
                 <div className="bg-white rounded-2xl shadow-lg p-8 transform hover:scale-[1.02] transition-transform duration-300">
                     <h2 className="text-2xl font-semibold mb-6 text-[var(--theme-1)]">よくある質問</h2>
@@ -74,7 +110,16 @@ export default function ContactPage() {
 
                 <div className="bg-white rounded-2xl shadow-lg p-8">
                     <h2 className="text-2xl font-semibold mb-6 text-[var(--theme-1)]">お問い合わせフォーム</h2>
-                    <form onSubmit={handleSubmit} className="space-y-6">
+                    <form
+                        onSubmit={handleSubmit}
+                        className="space-y-6"
+                        name="contact"
+                        method="POST"
+                        data-netlify="true"
+                        netlify-honeypot="bot-field"
+                    >
+                        <input type="hidden" name="form-name" value="contact" />
+                        <input type="hidden" name="bot-field" />
                         <div>
                             <label className="block text-sm font-medium text-gray-700 mb-2">
                                 何についてのお問い合わせですか？
@@ -243,7 +288,6 @@ export default function ContactPage() {
                     </form>
                 </div>
             </div>
-        </main>
         </main>
     );
 }

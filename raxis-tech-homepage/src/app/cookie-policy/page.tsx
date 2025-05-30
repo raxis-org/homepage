@@ -4,7 +4,7 @@ export default function CookiePolicy() {
     return (
         <div className="max-w-4xl mx-auto px-4 py-12">
             <h1 className="text-3xl font-bold mb-8">Cookieポリシー</h1>
-            
+
             <section className="mb-12">
                 <h2 className="text-2xl font-bold mb-4">1. Cookieとは</h2>
                 <p className="mb-4">
@@ -69,4 +69,4 @@ export default function CookiePolicy() {
             </section>
         </div>
     );
-} 
+}
