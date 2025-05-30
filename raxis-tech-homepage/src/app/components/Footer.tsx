@@ -19,14 +19,14 @@ export default function Footer() {
                                 priority
                             />
                         </Link>
-                        <div className="flex flex-nowrap justify-start gap-2 m-4 text-white" id="ft-sns-links">
-                            <Link target="_blank" href="https://x.com/raxis.org/">
+                        <div className="flex flex-nowrap justify-center items-center gap-2 m-4 text-white" id="ft-sns-links">
+                            <Link target="_blank" href="https://x.com/raxis.org/" className="flex items-center justify-center">
                                 <FontAwesomeIcon icon={faXTwitter} size="3x"/>
                             </Link>
-                            <Link target="_blank" href="https://www.instagram.com/raxis.tech/">
+                            <Link target="_blank" href="https://www.instagram.com/raxis.tech/" className="flex items-center justify-center">
                                 <FontAwesomeIcon icon={faInstagram} size="3x"/>
                             </Link>
-                            <Link target="_blank" href="https://github.com/raxis-tech">
+                            <Link target="_blank" href="https://github.com/raxis-tech" className="flex items-center justify-center">
                                 <FontAwesomeIcon icon={faGithub} size="3x"/>
                             </Link>
                         </div>

@@ -2,7 +2,7 @@
 
 export default function MembersPage() {
     return (
-        <div className="container mx-auto px-4 py-8">
+        <main>
             <h1 className="text-3xl font-bold mb-6">メンバー</h1>
             {/* メンバーリスト */}
             <div className="grid md:grid-cols-2 gap-6">
@@ -34,7 +34,7 @@ export default function MembersPage() {
                     description="AIの戦略を立てる。"
                 />
             </div>
-        </div>
+        </main>
     );
 }
 

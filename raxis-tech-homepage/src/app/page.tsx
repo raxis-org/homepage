@@ -5,7 +5,7 @@ import ProductsCarousel from "./components/ProductsCarousel";
 export default function Home() {
   return (
     <div className="font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+      <div className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <div className="hero w-[100vw] h-[60vh] mt-[-80px] pt-[150px] bg-gradient-to-tr from-purple-200 to-indigo-200 py-8">
           <div className="hero-inner lg:w-[1024px] m-auto flex flex-nowrap justify-between items-center">
             <div className="hero-left">
@@ -25,7 +25,7 @@ export default function Home() {
           </div>
         </div>
         <ProductsCarousel/>
-      </main>
+      </div>
     </div>
   );
 }
