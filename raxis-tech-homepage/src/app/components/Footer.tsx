@@ -71,8 +71,8 @@ export default function Footer() {
             <div className="w-full bg-slate-800 p-4">
                 <div className="container lg:w-[1000px] m-auto flex flex-col items-start md:flex-row md:flex-nowrap md:justify-between md:items-center">
                     <div className="flex flex-nowrap justify-start text-gray-400 gap-8">
-                        <Link href="#">プライバシーポリシー</Link>
-                        <Link href="#">cookieポリシー</Link>
+                        <Link href="/privacy-policy">プライバシーポリシー</Link>
+                        <Link href="/cookie-policy">cookieポリシー</Link>
                     </div>
                     <div>
                         <div className="inline-block md:border-none border-t-[2px] border-[#777] mt-4 md:mt-0 pt-4 md:pt-0 text-gray-400 text-sm">Copyright © 2025 All Right Reserved.</div>
