@@ -6,22 +6,22 @@ export default function MissionsPage() {
             <h1 className="text-3xl font-bold mb-6">理念</h1>
             {/* 理念リスト */}
             <div className="grid md:grid-cols-2 gap-6">
-                {/* 未来を支えるIT技術の創造 */}
+                {/* 技術革新による社会貢献 */}
                 <MissionCard
-                    title="学業に邁進"
-                    description="東大医学部頭悪くないか"
+                    title="技術革新の推進"
+                    description="最先端のIT技術を活用し、社会の課題解決と発展に貢献します。"
                 />
 
-                {/* 人々の生活を豊かにする */}
+                {/* 誠実な行動と信頼の構築 */}
                 <MissionCard
-                    title="礼節の実践"
-                    description="中田ひろみ以外には敬語を使おう。"
+                    title="誠実と信頼"
+                    description="常に誠実な姿勢で行動し、お客様や社会との信頼関係を大切にします。"
                 />
 
-                {/* 社会の発展に貢献 */}
+                {/* 持続可能な未来への取り組み */}
                 <MissionCard
-                    title="山水の愛護"
-                    description="洛北にある銀杏は全て刈り取ろう"
+                    title="持続可能な未来の実現"
+                    description="環境や社会に配慮した事業活動を通じて、持続可能な未来を目指します。"
                 />
             </div>
         </main>
