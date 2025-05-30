@@ -19,14 +19,14 @@ export default function Footer() {
                                 priority
                             />
                         </Link>
-                        <div className="flex flex-nowrap justify-start gap-2 m-4 text-white" id="ft-sns-links">
-                            <Link target="_blank" href="https://x.com/raxis.org/">
+                        <div className="flex flex-nowrap justify-center items-center gap-2 m-4 text-white" id="ft-sns-links">
+                            <Link target="_blank" href="https://x.com/raxis.org/" className="flex items-center justify-center">
                                 <FontAwesomeIcon icon={faXTwitter} size="3x"/>
                             </Link>
-                            <Link target="_blank" href="https://www.instagram.com/raxis.tech/">
+                            <Link target="_blank" href="https://www.instagram.com/raxis.tech/" className="flex items-center justify-center">
                                 <FontAwesomeIcon icon={faInstagram} size="3x"/>
                             </Link>
-                            <Link target="_blank" href="https://github.com/raxis-tech">
+                            <Link target="_blank" href="https://github.com/raxis-tech" className="flex items-center justify-center">
                                 <FontAwesomeIcon icon={faGithub} size="3x"/>
                             </Link>
                         </div>
@@ -71,8 +71,8 @@ export default function Footer() {
             <div className="w-full bg-slate-800 p-4">
                 <div className="container lg:w-[1000px] m-auto flex flex-col items-start md:flex-row md:flex-nowrap md:justify-between md:items-center">
                     <div className="flex flex-nowrap justify-start text-gray-400 gap-8">
-                        <Link href="#">プライバシーポリシー</Link>
-                        <Link href="#">cookieポリシー</Link>
+                        <Link href="/privacy-policy">プライバシーポリシー</Link>
+                        <Link href="/cookie-policy">cookieポリシー</Link>
                     </div>
                     <div>
                         <div className="inline-block md:border-none border-t-[2px] border-[#777] mt-4 md:mt-0 pt-4 md:pt-0 text-gray-400 text-sm">Copyright © 2025 All Right Reserved.</div>

@@ -244,5 +244,6 @@ export default function ContactPage() {
                 </div>
             </div>
         </main>
+        </main>
     );
 }
