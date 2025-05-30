@@ -12,8 +12,8 @@ export default function AboutPage() {
         <h2 className="text-2xl font-semibold mb-4">会社概要</h2>
         <ul className="bg-gray-100 p-4 rounded-lg">
           <li><strong>会社名:</strong> 株式会社Raxis</li>
-          <li><strong>役員:</strong> 村松 (システムマネージャー), 黒川 (AIストラテジスト), 松原 (エグゼクティブディレクター)</li>
-          <li><strong>設立日:</strong> YYYY年MM月DD日</li>
+          <li><strong>役員:</strong> 田中(CEO), 山口(CTO), 村松 (システムマネージャー), 黒川 (AIストラテジスト)</li>
+          <li><strong>設立日:</strong> 2023年12月7日</li>
           <li><strong>本拠地:</strong> 京都, 日本</li>
           <li><strong>理念:</strong> 未来を支えるIT技術の創造</li>
           <li><strong>資本金:</strong> 1000万円</li>

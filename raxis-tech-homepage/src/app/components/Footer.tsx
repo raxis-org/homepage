@@ -31,7 +31,7 @@ export default function Footer() {
                             </Link>
                         </div>
                         <div>
-                            〒107-0052 <br/>東京都港区赤坂1丁目1番地
+                            〒170-0001 <br/>東京都豊島区西巣鴨2-31-7<br/>Raxis株式会社<br/>
                         </div>
                     </div>
                     <div id="ft-sitemap" className="w-full md:w-[calc(100%-250px-50px)] mt-8 md:mt-0 md:ml-[50px] flex-column flex-nowrap justify-start items-start md:flex md:justify-end md:gap-4 hover-link">

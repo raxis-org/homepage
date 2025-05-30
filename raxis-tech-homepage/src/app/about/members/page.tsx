@@ -10,28 +10,28 @@ export default function MembersPage() {
                 <MemberCard
                     name="田中"
                     role="CEO"
-                    description="会社のリーダー。"
+                    description="東京大学入学後、情報系の学部に進学。サークルでIT技術やAIについて学び、インターン企業で経験を積む。在学中にRaxisを設立"
                 />
 
                 {/* 山口 */}
                 <MemberCard
                     name="山口"
                     role="CTO"
-                    description="技術のリーダー。"
+                    description="京都大学に入学し、情報工学を専攻。大学院でAIの研究を行い、卒業後にRaxisのCTOとして技術戦略を担当。"
                 />
 
                 {/* 村松 */}
                 <MemberCard
                     name="村松"
                     role="システムマネージャー"
-                    description="システムの管理を担当。"
+                    description="京都大学卒業後、IT企業でシステムエンジニアとして経験を積む。Raxisではシステムの設計と運用を担当。"
                 />
 
                 {/* 黒川 */}
                 <MemberCard
                     name="黒川"
                     role="AIストラテジスト"
-                    description="AIの戦略を立てる。"
+                    description="京都大学でAIの研究を行い、企業での実務経験を経てRaxisに参加。AI技術の戦略立案とプロジェクト推進を担当。"
                 />
             </div>
         </main>
