@@ -81,7 +81,7 @@ export default function ContactPage() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 mb-12">
-                <div className="bg-white rounded-2xl shadow-lg p-8 transform hover:scale-[1.02] transition-transform duration-300">
+                <div className="bg-white rounded-2xl shadow-lg p-8 transform transition-transform duration-300">
                     <h2 className="text-2xl font-semibold mb-6 text-[var(--theme-1)]">よくある質問</h2>
                     <div className="space-y-4">
                         <details className="bg-gray-50 p-4 rounded-xl hover:bg-gray-100 transition-colors duration-200">
