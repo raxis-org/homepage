@@ -4,6 +4,7 @@ import "./globals.css";
 import "./header.css";
 import "./footer.css";
 import "./page.css";
+import "./main.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 

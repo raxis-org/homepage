@@ -2,7 +2,7 @@
 
 export default function MissionsPage() {
     return (
-        <div className="container mx-auto px-4 py-8">
+        <main>
             <h1 className="text-3xl font-bold mb-6">理念</h1>
             {/* 理念リスト */}
             <div className="grid md:grid-cols-2 gap-6">
@@ -24,8 +24,7 @@ export default function MissionsPage() {
                     description="洛北にある銀杏は全て刈り取ろう"
                 />
             </div>
-
-        </div>
+        </main>
     );
 }
 
